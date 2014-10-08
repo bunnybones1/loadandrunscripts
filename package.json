@@ -1,0 +1,30 @@
+{
+  "name": "loadandrunscripts",
+  "version": "1.0.0",
+  "description": "Loads and runs scripts with a callback. Not unlike requirejs, but simpler and much more basic.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Tomasz Dysinski",
+    "email": "oz@bunnybones.com",
+    "url": "https://github.com/bunnybones1"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "beefy test.js --live --open"
+  },
+  "keywords": [
+    "load",
+    "require",
+    "scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bunnybones1/loadandrunscripts.git"
+  },
+  "homepage": "https://github.com/bunnybones1/loadandrunscripts",
+  "bugs": {
+    "url": "https://github.com/bunnybones1/loadandrunscripts/issues"
+  }
+}
