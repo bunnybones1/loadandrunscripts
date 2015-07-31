@@ -23,5 +23,19 @@ function loadAndRunScripts(paths, callback) {
 	};
 }
 
+var oldWrite = document.write;
+document.write = function() {
+	var src = /src=(["'])(.*?)\1/.exec(arguments[0]);
+	if(src[2]) {
+		var head = document.getElementsByTagName('head')[0];
+		var script = document.createElement('script');
+		script.type = 'text/javascript';
+		script.src = src[2];
+		head.appendChild(script);
+	} else {
+		oldWrite.apply(null, arguments);
+	}
+}
+
 
 module.exports = loadAndRunScripts;
