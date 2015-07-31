@@ -1,6 +1,6 @@
 {
   "name": "loadandrunscripts",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Loads and runs scripts with a callback. Not unlike requirejs, but simpler and much more basic.",
   "main": "index.js",
   "license": "MIT",
